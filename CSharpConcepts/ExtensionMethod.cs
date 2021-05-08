@@ -20,5 +20,10 @@ namespace CSharpConcepts
             string reverseString = new string(reverseArray);
             return reverseString;
         }
+
+        public static List<string> NameContainsSadan(this List<string> names)
+        {
+            return names.FindAll(i => i.Contains("sadan"));
+        }
     }
 }

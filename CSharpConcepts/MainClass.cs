@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CSharpConcepts
 {
@@ -24,6 +25,13 @@ namespace CSharpConcepts
             string name = "sadan";
             string reverse = name.ReverseString();
             Console.WriteLine("reverse string using extension method is - {0}", reverse);
+
+            List<string> allNames = new List<string> {"sadan","sadanroy" ,"skumar","sprag"};
+            //2 ways to get data
+            var result= allNames.NameContainsSadan(); //extension method .. behind the scenes it convert into next code line
+            var result1 = ExtensionMethod.NameContainsSadan(allNames);
+
+            ////////////////////
 
             Console.ReadLine();
 
