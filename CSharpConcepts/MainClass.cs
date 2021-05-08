@@ -6,6 +6,7 @@ namespace CSharpConcepts
     {
         static void Main(string[] args)
         {
+            ////////////////////////////Out vs Ref ////////////////////////////////////
             int originalNumber = 10;
             OutVsRef outVsRef = new OutVsRef();
 
@@ -18,6 +19,11 @@ namespace CSharpConcepts
 
             outVsRef.AddNumbersUsingRef(ref originalNumber);
             Console.WriteLine("originalNumber number using ref is - {0}", originalNumber);
+
+            /////////////////////////////Extension Method//////////////////////
+            string name = "sadan";
+            string reverse = name.ReverseString();
+            Console.WriteLine("reverse string using extension method is - {0}", reverse);
 
             Console.ReadLine();
 
