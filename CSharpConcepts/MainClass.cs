@@ -32,6 +32,8 @@ namespace CSharpConcepts
             var result1 = ExtensionMethod.NameContainsSadan(allNames);
 
             ////////////////////
+            ///
+            ConstantVsReadOnly.SomeMethod();
 
             Console.ReadLine();
 
