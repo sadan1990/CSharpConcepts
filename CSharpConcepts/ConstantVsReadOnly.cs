@@ -23,11 +23,11 @@ namespace CSharpConcepts
 
             //////////////////////////////
             //try with -
-            // var a = 0;
-            // dynamic b =1;
-            // b = b- "sadan";
-            // object c =1;
-            //// c = c- "sadan";
+            //var a1 = 0;
+            //dynamic b1 = 1;
+            //b1 = b1 - "sadan";
+            //object c1 = 1;
+            // c1 = c1- "sadan";
         }
 
     }

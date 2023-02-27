@@ -15,12 +15,13 @@ namespace CSharpConcepts
             //outVsRef.AddNumbers(originalNumber);
             //Console.WriteLine("originalNumber number is - {0}", originalNumber);
 
+            //int originalNumberOut;
+            //outVsRef.AddNumbersUsingOut(out originalNumberOut);
+            //Console.WriteLine("originalNumber number using out is - {0}", originalNumberOut);
 
-            //outVsRef.AddNumbersUsingOut(out originalNumber);
-            //Console.WriteLine("originalNumber number using out is - {0}", originalNumber);
-
-            //outVsRef.AddNumbersUsingRef(ref originalNumber);
-            //Console.WriteLine("originalNumber number using ref is - {0}", originalNumber);
+            //int originalNumberRef=15;
+            //outVsRef.AddNumbersUsingRef(ref originalNumberRef);
+            //Console.WriteLine("originalNumber number using ref is - {0}", originalNumberRef);
 
             ///////////////////////////////Extension Method//////////////////////
             //Console.WriteLine("--------------------------------Extension Method--------------------------");
@@ -42,28 +43,29 @@ namespace CSharpConcepts
             ////////////////////////////////////Signleton Pattern////////////////////////////////
 
             //Console.WriteLine("--------------------------------Signleton Class--------------------------");
-            //SigletonClass obj = SigletonClass.ReturnSigletonObject;
-            //obj.PrintMessage();
+            SigletonClass obj = SigletonClass.ReturnSigletonObject;
+            obj.PrintMessage();
 
-            //SigletonClass obj1 = SigletonClass.ReturnSigletonObject;
-            //obj1.PrintMessage();
+            SigletonClass obj1 = SigletonClass.ReturnSigletonObject;
+            obj1.PrintMessage();
 
             //LargestArrayNumber largestArrayNumber = new LargestArrayNumber();
 
-            //int[] datas = {-6, -91, 1011,-100,84,-22,0,1,9,473 };
-            //var data= largestArrayNumber.GetLargestNumber(datas);
+            //int[] datas = { -6, -91, 1011, -100, 84, -22, 0, 1, 9, 473 };
+            //var data = largestArrayNumber.GetLargestNumber(datas);
 
 
             //FizBuzzs.fizzBuzz(15);
+
             //BubbleSort bubbleSort = new BubbleSort();
             //bubbleSort.Sort();
 
             //Reverse reverse = new Reverse();
-            //  reverse.reverse();
+            //reverse.reverse();
 
-            Palindrom palindrom = new Palindrom();
-            palindrom.CheckPalindrom();
-            Console.ReadLine();
+            //Palindrom palindrom = new Palindrom();
+            //palindrom.CheckPalindrom();
+            //Console.ReadLine();
 
 
 
