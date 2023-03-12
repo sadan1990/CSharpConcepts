@@ -43,11 +43,11 @@ namespace CSharpConcepts
             ////////////////////////////////////Signleton Pattern////////////////////////////////
 
             //Console.WriteLine("--------------------------------Signleton Class--------------------------");
-            SigletonClass obj = SigletonClass.ReturnSigletonObject;
-            obj.PrintMessage();
+            //SigletonClass obj = SigletonClass.ReturnSigletonObject;
+            //obj.PrintMessage();
 
-            SigletonClass obj1 = SigletonClass.ReturnSigletonObject;
-            obj1.PrintMessage();
+            //SigletonClass obj1 = SigletonClass.ReturnSigletonObject;
+            //obj1.PrintMessage();
 
             //LargestArrayNumber largestArrayNumber = new LargestArrayNumber();
 
@@ -68,6 +68,21 @@ namespace CSharpConcepts
             //Console.ReadLine();
 
 
+            ///////////////////////////Generics ////////////////////////
+            GenericsMethod obj = new GenericsMethod();
+             bool result= obj.Compare<int>(1, 2);
+
+            GenericsClass<string> obj1 = new GenericsClass<string>();
+            bool result1 =obj1.Compare("sadan", "sadan");
+
+
+            Student obj2 = new Student
+            {
+                id = 4
+            };
+            GenericsClassWhere<Student> genericsClassWhere = new GenericsClassWhere<Student>();
+            int id = genericsClassWhere.GetId(obj2);
+            /////////////////////////////////////////////////////////////
 
         }
     }
