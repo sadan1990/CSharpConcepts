@@ -69,20 +69,28 @@ namespace CSharpConcepts
 
 
             ///////////////////////////Generics ////////////////////////
-            GenericsMethod obj = new GenericsMethod();
-             bool result= obj.Compare<int>(1, 2);
+            //GenericsMethod obj = new GenericsMethod();
+            // bool result= obj.Compare<int>(1, 2);
 
-            GenericsClass<string> obj1 = new GenericsClass<string>();
-            bool result1 =obj1.Compare("sadan", "sadan");
+            //GenericsClass<string> obj1 = new GenericsClass<string>();
+            //bool result1 =obj1.Compare("sadan", "sadan");
 
 
-            Student obj2 = new Student
-            {
-                id = 4
-            };
-            GenericsClassWhere<Student> genericsClassWhere = new GenericsClassWhere<Student>();
-            int id = genericsClassWhere.GetId(obj2);
+            //Student obj2 = new Student
+            //{
+            //    id = 4
+            //};
+            //GenericsClassWhere<Student> genericsClassWhere = new GenericsClassWhere<Student>();
+            //int id = genericsClassWhere.GetId(obj2);
             /////////////////////////////////////////////////////////////
+            ///
+
+            ////////////////////////////////////Delegates////////////////////////////////////
+            Delegates obj = new Delegates();
+            //Since LongRunningTask accepts a delegate, so method "LogMessage" was passed,
+            //as it has same signature as of delegate
+            obj.LongRunningTask(obj.LogMessage);
+            Console.ReadLine();
 
         }
     }
