@@ -86,10 +86,15 @@ namespace CSharpConcepts
             ///
 
             ////////////////////////////////////Delegates////////////////////////////////////
-            Delegates obj = new Delegates();
-            //Since LongRunningTask accepts a delegate, so method "LogMessage" was passed,
-            //as it has same signature as of delegate
-            obj.LongRunningTask(obj.LogMessage);
+            //Delegates obj = new Delegates();
+            ////Since LongRunningTask accepts a delegate, so method "LogMessage" was passed,
+            ////as it has same signature as of delegate
+            //obj.LongRunningTask(obj.LogMessage);
+            //Console.ReadLine();
+
+            ///////////////////////////////Parallel Tasks////////////////////////////////////
+            ParallelAsyncTasks obj = new ParallelAsyncTasks();
+            obj.GetAllName();
             Console.ReadLine();
 
         }
